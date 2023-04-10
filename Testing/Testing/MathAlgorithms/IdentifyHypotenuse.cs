@@ -8,8 +8,14 @@ namespace Testing.MathAlgorithms
 {
     public class IdentifyHypotenuse
     {
+        /// <summary>
+        /// IdentifyHypotenuse's Constructor.
+        /// </summary>
         public IdentifyHypotenuse() { }
 
+        /// <summary>
+        /// Verify a range between 1 and N returning the numbers that contains hypotenuse and respectives sides.
+        /// </summary>
         public void IdentifyHypotenuseAndSides()
         {
             Console.WriteLine("\n----------------\nThis will verify and print the numbers that contains hypotenuse and respectives sides.\n----------------");

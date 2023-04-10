@@ -8,8 +8,14 @@ namespace Testing.MathAlgorithms
 {
     public class MathOperators
     {
+        /// <summary>
+        /// MathOperators' Constructor.
+        /// </summary>
         public MathOperators() { }
 
+        /// <summary>
+        /// Returns a math calculation resolution based on selected math operator.
+        /// </summary>
         public void MathOperations()
         {
             Console.WriteLine("\nMath Operators\n----------------\n");
@@ -19,13 +25,13 @@ namespace Testing.MathAlgorithms
             Console.Write("Enter the second number: ");
             double num2 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Selecione uma operação:");
-            Console.WriteLine("1 - Adição");
-            Console.WriteLine("2 - Subtração");
-            Console.WriteLine("3 - Multiplicação");
-            Console.WriteLine("4 - Divisão");
-            Console.WriteLine("5 - Potência");
-            Console.WriteLine("6 - Raiz Quadrada");
+            Console.WriteLine("Select an operator:");
+            Console.WriteLine("1 - Add");
+            Console.WriteLine("2 - Subtraction");
+            Console.WriteLine("3 - Multiplication");
+            Console.WriteLine("4 - Division");
+            Console.WriteLine("5 - Power");
+            Console.WriteLine("6 - Square Root");
             int operacao = int.Parse(Console.ReadLine());
 
             double resultado = 0;
@@ -34,42 +40,42 @@ namespace Testing.MathAlgorithms
             {
                 case 1:
                     resultado = num1 + num2;
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("Pressione qualquer tecla para sair.");
+                    Console.WriteLine("Result: " + resultado);
+                    Console.WriteLine("Press any button to quit.");
                     Console.ReadKey();
                     break;
                 case 2:
                     resultado = num1 - num2;
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("Pressione qualquer tecla para sair.");
+                    Console.WriteLine("Result: " + resultado);
+                    Console.WriteLine("Press any button to quit.");
                     Console.ReadKey();
                     break;
                 case 3:
                     resultado = num1 * num2;
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("Pressione qualquer tecla para sair.");
+                    Console.WriteLine("Result: " + resultado);
+                    Console.WriteLine("Press any button to quit.");
                     Console.ReadKey();
                     break;
                 case 4:
                     resultado = num1 / num2;
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("Pressione qualquer tecla para sair.");
+                    Console.WriteLine("Result: " + resultado);
+                    Console.WriteLine("Press any button to quit.");
                     Console.ReadKey();
                     break;
                 case 5:
                     resultado = Math.Pow(num1, num2);
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("Pressione qualquer tecla para sair.");
+                    Console.WriteLine("Result: " + resultado);
+                    Console.WriteLine("Press any button to quit.");
                     Console.ReadKey();
                     break;
                 case 6:
                     resultado = Math.Sqrt(num1);
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("Pressione qualquer tecla para sair.");
+                    Console.WriteLine("Result: " + resultado);
+                    Console.WriteLine("Press any button to quit.");
                     Console.ReadKey();
                     break;
                 default:
-                    Console.WriteLine("Operação inválida");
+                    Console.WriteLine("Invalid operation.");
                     break;
             }
         }
