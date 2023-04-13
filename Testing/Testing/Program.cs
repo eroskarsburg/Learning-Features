@@ -14,8 +14,8 @@ namespace Testing
             IdentifyPrimeNumbers primeNumbers = new IdentifyPrimeNumbers();
             primeNumbers.PrimeNumbers();
 
-            MathOperators mathOperators = new MathOperators();
-            mathOperators.MathOperations();
+            MathOperators operators = new MathOperators();
+            operators.MathOperations();
 
             IdentifyHypotenuse hypotenuse = new IdentifyHypotenuse();
             hypotenuse.IdentifyHypotenuseAndSides();

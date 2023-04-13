@@ -23,8 +23,8 @@ namespace Testing.MathAlgorithms
             int num = int.Parse(Console.ReadLine());
             Console.WriteLine("--------------------");
 
-            int x, y = num;
-            int aux = num;
+            int x, y;
+            int aux;
 
 
             for (aux = num; aux > 1; aux--)
@@ -35,7 +35,7 @@ namespace Testing.MathAlgorithms
                     {
                         if (aux * aux == (x * x) + (y * y))
                         {
-                            Console.WriteLine($"{aux} is hypotenuse ans sides are {x} and {y}");
+                            Console.WriteLine($"{aux} is hypotenuse and sides are {x} and {y}");
                             continue;
                         }
 
