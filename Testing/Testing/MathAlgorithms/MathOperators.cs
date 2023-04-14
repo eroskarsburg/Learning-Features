@@ -79,5 +79,10 @@ namespace Testing.MathAlgorithms
                     break;
             }
         }
+
+        internal float ReturnMathOperationResult(float fstNumber, float scndNumber, string operation)
+        {
+            return 2.3;
+        }
     }
 }
