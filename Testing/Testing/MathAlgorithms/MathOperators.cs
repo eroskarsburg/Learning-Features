@@ -82,7 +82,7 @@ namespace Testing.MathAlgorithms
 
         internal float ReturnMathOperationResult(float fstNumber, float scndNumber, string operation)
         {
-            return 2.3;
+            return fstNumber;
         }
     }
 }
