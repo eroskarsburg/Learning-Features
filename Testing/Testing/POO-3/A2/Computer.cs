@@ -13,5 +13,16 @@ namespace Testing.POO_3.A2
 
         internal string ShowComputerName() { return Name; }
         internal int ShowClock() { return Clock; }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Computer computer &&
+                   Name == computer.Name;
+        }
+
+        public override string ToString()
+        {
+            return $"Infos:\nName: {Name}\nClock: {Clock}";
+        }
     }
 }

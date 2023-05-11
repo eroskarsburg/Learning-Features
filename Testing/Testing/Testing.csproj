@@ -52,6 +52,11 @@
     <Compile Include="POO-3\A2\Product.cs" />
     <Compile Include="POO-3\A2\StudentGrade.cs" />
     <Compile Include="POO-3\A3\Dog.cs" />
+    <Compile Include="POO-3\A4Entrega\Car.cs" />
+    <Compile Include="POO-3\A4Entrega\Motorcycle.cs" />
+    <Compile Include="POO-3\A4Entrega\Payroll.cs" />
+    <Compile Include="POO-3\A4Entrega\Persona.cs" />
+    <Compile Include="POO-3\A4Entrega\Telephone.cs" />
     <Compile Include="POO-3\TestMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
