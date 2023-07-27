@@ -1,0 +1,22 @@
+O trabalho consiste em criar as validações para o cadastro de um carro,
+e desenvolvimento dos testes unitários para essas validações.
+
+A classe de validação é "ValidaCarro" e a classe de testes unitários é
+"ValidaCarroTest".
+
+As validações que devem ser feitas junto com os TU, está abaixo.
+
+1. campo id, aceitar somente número acima de 0
+2. campo modelo, obrigatório, máximo de caracteres 20
+3. campo marca, obrigatório, aceitar somente os valores (VW, Ford, GM, Fiat)
+4. campo placa, obrigatório, total de caracteres deve ser igual a 8. Ex: IEV-7889
+5. campo ano Fabricacao, obrigatório, aceitar somente números acima de 1980
+6. campo nome proprietário, obrigatório, máximo de caracteres é 25.
+7. campo valor total,  somente números, entre 1 à 50.000
+8. campo é financiado, não tem validação
+9. campo valor financiamento, somente é validado se o campo "é financiado" estiver 
+com o valor "sim"(true). Caso estiver com "sim"(true), o campo deve ser validado, aceitando
+somente números, entre 1 e "valor total". Se estiver "não", não fazer nenhuma 
+validação.
+
+BOA SORTE :)
