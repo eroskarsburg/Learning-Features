@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Testing.ADS;
 using Testing.POO_3.A10;
+using Testing.POO_3.A13;
 using Testing.POO_3.A9Exam;
 
 namespace Testing
@@ -194,26 +197,53 @@ namespace Testing
 
 			#endregion
 
+			#region = x =
+			//Calculadora calc = new Calculadora();
+			//Console.WriteLine("Soma int: " + calc.Soma(1, 2));
+			//Console.WriteLine("Soma float: " + calc.Soma(3.3, 4.4));
+			//Console.WriteLine("Soma double: " + calc.Soma(32.43, 543.534));
+			//Console.WriteLine("Soma int: " + calc.Soma(1, 3, 5));
+			//Console.WriteLine("Soma float: " + calc.Soma(1.2, 2.3, 5.4));
+			//Console.WriteLine("Soma double: " + calc.Soma(1.5, 2.5, 3.5) + "\n");
+
+			//Relogio rel = new Relogio();
+			//rel.ConfiguraHorario(1, 3);
+			//rel.ConfiguraHorario(3, 6, 9);
+
+			//ThirdCar car = new ThirdCar();
+			//car.MontaCarro("Civic", "Honda", 3312);
+			//car.MontaCarro("Civic", "Honda");
+			//car.MontaCarro("Civic", 3312);
+			#endregion
+
 			//ADSEx.StartGame();
 
-			Calculadora calc = new Calculadora();
-			Console.WriteLine("Soma int: " + calc.Soma(1, 2));
-			Console.WriteLine("Soma float: " + calc.Soma(3.3, 4.4));
-			Console.WriteLine("Soma double: " + calc.Soma(32.43, 543.534));
-			Console.WriteLine("Soma int: " + calc.Soma(1, 3, 5));
-			Console.WriteLine("Soma float: " + calc.Soma(1.2, 2.3, 5.4));
-			Console.WriteLine("Soma double: " + calc.Soma(1.5, 2.5, 3.5) + "\n");
+			OracleDatabase odb = new OracleDatabase();
+			odb.ConnectionString = "Oracle ConnectionString";
+			odb.Connect();
+			odb.Disconnect();
 
-			Relogio rel = new Relogio();
-			rel.ConfiguraHorario(1, 3);
-			rel.ConfiguraHorario(3, 6, 9);
+			MySqlDatabase mydb = new MySqlDatabase();
+			mydb.ConnectionString = "MySql ConnectionString";
+			mydb.Connect();
+			mydb.Disconnect();
 
-			ThirdCar car = new ThirdCar();
-			car.MontaCarro("Civic", "Honda", 3312);
-			car.MontaCarro("Civic", "Honda");
-			car.MontaCarro("Civic", 3312);
+			List<Database> dbList = new List<Database>();
+			dbList.Add(odb);
+			dbList.Add(mydb);
+
+			Program.ListDatabaseConnections(dbList);
 
 			Console.ReadLine();
+		}
+
+		public static List<Database> ListDatabaseConnections(List<Database> databases)
+		{
+			foreach (Database db in databases)
+			{
+				Console.WriteLine($"Database: {db.ConnectionString}");
+			}
+			return databases;
 		}
 	}
 }

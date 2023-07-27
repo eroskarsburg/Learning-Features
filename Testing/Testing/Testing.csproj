@@ -51,6 +51,9 @@
     <Compile Include="POO-3\A10\Calculadora.cs" />
     <Compile Include="POO-3\A10\Relogio.cs" />
     <Compile Include="POO-3\A10\ThirdCar.cs" />
+    <Compile Include="POO-3\A13\Database.cs" />
+    <Compile Include="POO-3\A13\MySqlDatabase.cs" />
+    <Compile Include="POO-3\A13\OracleDatabase.cs" />
     <Compile Include="POO-3\A2\Calculator.cs" />
     <Compile Include="POO-3\A2\Computer.cs" />
     <Compile Include="POO-3\A2\FiscalNote.cs" />
